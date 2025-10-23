@@ -3,3 +3,4 @@ build
 public/mockServiceWorker.js
 .vscode
 .env.local
+package-lock.json
