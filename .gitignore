@@ -1,0 +1,5 @@
+node_modules
+build
+public/mockServiceWorker.js
+.vscode
+.env.local

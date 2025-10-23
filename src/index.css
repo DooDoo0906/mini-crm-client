@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #ffffff;
+}
+
+body {
+  background-color: var(--primaryBg);
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* card helper */
+.card {
+  @apply bg-white rounded-xl p-6 shadow-sm;
+}
+
+.card-yellow {
+  @apply  rounded-xl p-6 shadow-sm bg-yellow-50;
+}
+
+
+
+/* sidebar collapse behavior for narrower desktop */
+@media (max-width: 1100px) {
+  aside.w-72 { width: 56px; }
+  aside.w-72 nav a span:first-child { display: none; }
+  .sidebar-logo { display: none; }
+}
+
+.table-responsive { overflow-x: auto; }
+
+.header-search { width: 600px; }
