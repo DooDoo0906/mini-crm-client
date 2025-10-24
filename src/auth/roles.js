@@ -1,0 +1,11 @@
+export const ROLES = {
+  ADMIN: "admin",
+  STAFF: "staff",
+};
+
+export const PERMISSIONS = {
+  VIEW_CUSTOMERS: [ROLES.ADMIN, ROLES.STAFF],
+  EDIT_CUSTOMERS: [ROLES.ADMIN],
+  VIEW_ORDERS: [ROLES.ADMIN, ROLES.STAFF],
+  EDIT_ORDERS: [ROLES.ADMIN],
+};
